@@ -8,3 +8,5 @@ CREATE TABLE animals (
     neutered boolean,
     weight_kg decimal
 );
+
+ALTER TABLE vet_clinicschema.animals ADD COLUMN species varchar(100);
