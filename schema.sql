@@ -9,4 +9,4 @@ CREATE TABLE animals (
     weight_kg decimal
 );
 
-ALTER TABLE vet_clinicschema.animals ADD COLUMN species varchar;
+ALTER TABLE vet_clinicschema.animals ADD COLUMN species varchar(100);
