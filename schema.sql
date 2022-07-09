@@ -9,4 +9,15 @@ CREATE TABLE animals (
     weight_kg decimal
 );
 
-ALTER TABLE vet_clinicschema.animals ADD COLUMN species varchar(100);
+ALTER TABLE animals ADD COLUMN species varchar(100);
+
+CREATE TABLE owners (
+    id SERIAL PRIMARY KEY,
+    full_name varchar(100),
+    age integer
+);
+
+CREATE TABLE species (
+    id SERIAL PRIMARY KEY,
+    name varchar(100)
+);
